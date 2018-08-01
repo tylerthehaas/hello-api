@@ -13,7 +13,7 @@ const { StringDecoder } = require("string_decoder");
 const config = require("./config");
 
 function hello(data, cb) {
-  cb(200, "hello good sir! You're looking mighty spiffy today!");
+  cb(200, { greeting: "hello good sir! You're looking mighty spiffy today!" });
 }
 
 function notFound(data, cb) {
